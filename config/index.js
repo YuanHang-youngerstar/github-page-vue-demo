@@ -44,13 +44,13 @@ module.exports = {
   },
 
   build: {
-    // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    // Template for index.html    原本：../dist/index.html
+    index: path.resolve(__dirname, '../docs/index.html'),
 
-    // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    // Paths 原本为../dist
+    assetsRoot: path.resolve(__dirname, '../docs'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',   //之前是'/'
 
     /**
      * Source Maps
